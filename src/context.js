@@ -1,15 +1,7 @@
 // import axios from 'axios'
 import React, { useState, useContext, useEffect } from "react";
 
-const table = {
-  sports: 21,
-  history: 23,
-  politics: 24,
-};
 
-const API_ENDPOINT = "https://opentdb.com/api.php?";
-
-const url = "";
 const term_url = "https://opentdb.com/api.php?amount=4";
 
 const AppContext = React.createContext();
