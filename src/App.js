@@ -14,7 +14,15 @@ function App() {
     return <SetupForm />;
   }
   const { question, incorrect_answers, correct_answer } = questions[index];
-  const answers = [...incorrect_answers, correct_answer];
+  const answers = [...incorrect_answers];
+  const randomQuestions = Math.round(Math.random()*4)
+  if(randomQuestions === 3) {
+    answers.push(correct_answer)
+  } else {
+    let zz = answers[randomQuestions] 
+    answers[randomQuestions] = correct_answer
+    answers.push(zz)
+  }
   return (
     <main>
       {isOpenModal && <Modal/>}
@@ -44,6 +52,7 @@ function App() {
       </section>
     </main>
   );
+  return <h2>quiz starter</h2>;
 }
 
 export default App;
