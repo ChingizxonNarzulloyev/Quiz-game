@@ -1,5 +1,5 @@
 // import axios from 'axios'
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext,} from "react";
 
 const table = {
   sports: 21,
@@ -8,10 +8,6 @@ const table = {
 };
 
 const API_ENDPOINT = "https://opentdb.com/api.php?";
-
-const url = "";
-
-
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
